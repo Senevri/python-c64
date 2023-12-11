@@ -1,0 +1,15 @@
+
+# Basic starts at 0108 little endian
+
+0108 0A08 #Start memory address, next "basic" command.
+0A00 9E 32 30 35 39 00 # Equivalent of "10sys2059
+#assembly
+#no need to set memory address, starts at 0B08 little endian
+A9 00 8D 20D0 8D 21D0 ee 0c08
+60 #rts
+
+# 080B: A9 00        LDA #$00          ; Load the accumulator with value $00
+# 080D: 8D 20D0      STA $D020         ; Store the value in the screen background color register
+# 0810: 8D 21D0      STA $D021         ; Store the value in the screen border color register
+# 0813: EE 0C08      INC $080C         ; Increment the value at memory address $080C
+# 0816: 60           RTS               ; Return from subroutine

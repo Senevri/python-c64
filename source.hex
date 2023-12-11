@@ -1,0 +1,4 @@
+0010 A9 00 8D 20D0 8D 21D0 ee 0110
+#a9 01 8d 2b a9 08 8d 2c # Reset start of basic memory.
+# c9 ff f0 03 4c 0010 a9 00 8d 0110
+60
